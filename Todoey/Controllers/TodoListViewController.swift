@@ -3,6 +3,7 @@
 //
 //  Created by Philipp Muellauer on 26/11/2019.
 //  Copyright © 2019 Philipp Muellauer. All rights reserved.
+//  Updated by Alice Ye on 30/08/2020
 //
 
 import UIKit
@@ -33,12 +34,11 @@ class TodoListViewController: SwipeTableViewController {
             guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")
             }
             if let navBarColour = UIColor(hexString: colourHex) {
-                //Original setting: navBar.barTintColor = UIColor(hexString: colourHex)
-                //Revised for iOS13 w/ Prefer Large Titles setting:
                 navBar.backgroundColor = navBarColour
-                navBar.tintColor = ContrastColorOf(navBarColour, returnFlat: true)
-                searchBar.barTintColor = navBarColour
             }
+            
+        }else{
+            print("category not selected at viewWillAppear")
         }
     }
     

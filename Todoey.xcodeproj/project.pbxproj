@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31B07CBB25191C400034F680 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B07CBA25191C400034F680 /* Category.swift */; };
+		31B07CC025191C7D0034F680 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B07CBF25191C7D0034F680 /* Item.swift */; };
 		C02745E4647B2B031C067637 /* Pods_Todoey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AEC661488E9D2195C8E5A8A /* Pods_Todoey.framework */; };
 		EB461D81238D63D70057DDEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB461D80238D63D70057DDEA /* AppDelegate.swift */; };
 		EB461D85238D63D70057DDEA /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB461D84238D63D70057DDEA /* TodoListViewController.swift */; };
@@ -14,13 +16,13 @@
 		EB461D8A238D63D80057DDEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB461D89238D63D80057DDEA /* Assets.xcassets */; };
 		EB461D8D238D63D80057DDEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB461D8B238D63D80057DDEA /* LaunchScreen.storyboard */; };
 		EB461DC1238FFFB50057DDEA /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB461DC0238FFFB50057DDEA /* CategoryViewController.swift */; };
-		EBDD8EE423911D1D00262B65 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDD8EE323911D1D00262B65 /* Item.swift */; };
-		EBDD8EE623911D2B00262B65 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDD8EE523911D2B00262B65 /* Category.swift */; };
 		EBDD8EE82391471600262B65 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDD8EE72391471600262B65 /* SwipeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2AEC661488E9D2195C8E5A8A /* Pods_Todoey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Todoey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B07CBA25191C400034F680 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		31B07CBF25191C7D0034F680 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4303BC1C37AA3BF0844F528A /* Pods-Todoey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.release.xcconfig"; path = "Target Support Files/Pods-Todoey/Pods-Todoey.release.xcconfig"; sourceTree = "<group>"; };
 		7EED3BA7647DE0018087475F /* Pods-Todoey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Todoey.debug.xcconfig"; path = "Target Support Files/Pods-Todoey/Pods-Todoey.debug.xcconfig"; sourceTree = "<group>"; };
 		EB461D7D238D63D70057DDEA /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,8 +33,6 @@
 		EB461D8C238D63D80057DDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB461D8E238D63D80057DDEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB461DC0238FFFB50057DDEA /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
-		EBDD8EE323911D1D00262B65 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		EBDD8EE523911D2B00262B65 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		EBDD8EE72391471600262B65 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,8 +117,8 @@
 		EB461D98238EB09B0057DDEA /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				EBDD8EE523911D2B00262B65 /* Category.swift */,
-				EBDD8EE323911D1D00262B65 /* Item.swift */,
+				31B07CBA25191C400034F680 /* Category.swift */,
+				31B07CBF25191C7D0034F680 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Philipp Muellauer";
 				TargetAttributes = {
 					EB461D7C238D63D70057DDEA = {
@@ -251,8 +251,8 @@
 				EB461D85238D63D70057DDEA /* TodoListViewController.swift in Sources */,
 				EB461D81238D63D70057DDEA /* AppDelegate.swift in Sources */,
 				EBDD8EE82391471600262B65 /* SwipeTableViewController.swift in Sources */,
-				EBDD8EE423911D1D00262B65 /* Item.swift in Sources */,
-				EBDD8EE623911D2B00262B65 /* Category.swift in Sources */,
+				31B07CC025191C7D0034F680 /* Item.swift in Sources */,
+				31B07CBB25191C400034F680 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +304,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -364,6 +365,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

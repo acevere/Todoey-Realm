@@ -4,6 +4,7 @@
 //
 //  Created by Philipp Muellauer on 29/11/2019.
 //  Copyright © 2019 Philipp Muellauer. All rights reserved.
+//  Updated by Alice Ye on 30/08/2020
 //
 
 import UIKit

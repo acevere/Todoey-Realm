@@ -4,6 +4,7 @@
 //
 //  Created by Philipp Muellauer on 28/11/2019.
 //  Copyright © 2019 Philipp Muellauer. All rights reserved.
+//  Updated by Alice Ye on 30/08/2020
 
 import UIKit
 import RealmSwift
@@ -27,7 +28,9 @@ class CategoryViewController: SwipeTableViewController {
     override func viewWillAppear(_ animated: Bool) {
         guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")
         }
-        navBar.backgroundColor = UIColor(hexString: "#1D9BF6")
+        navBar.backgroundColor = UIColor(hexString: "#dfe4ea")
+        navBar.tintColor = UIColor.black
+        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black]
     }
     
     //Mark: - Tableview Datasource Methods
@@ -102,7 +105,9 @@ class CategoryViewController: SwipeTableViewController {
     
     //Mark: - Tableview Delegate Methods
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         performSegue(withIdentifier: "goToItems", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
