@@ -4,6 +4,8 @@ The swipe-to-delete functionality is realized using the SwipeCellKit framework.
 
 Dynamic color effect realized using ChameleonFramework.
 
+Credit to AppBrewery
+
 ![Alt Text](Todoey_demo1.gif)
 
 ![Alt Text](Todoey_demo2.gif)
